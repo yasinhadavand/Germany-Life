@@ -1,0 +1,214 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: center center/cover no-repeat; */
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+    font-family: 'fonts/optimusprincepsregular';
+    /*    overflow: hidden;*/
+}
+.startpage{
+    width: calc(100vw);
+    height: 100vh;
+    background: url(photo/germany.jpg) center center/cover no-repeat;
+    position: absolute;
+}
+.gif{
+    position: absolute;
+    animation: gif 15s ease-in-out alternate infinite;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+.firstpageText{
+    position: absolute;
+    color: white;
+    top: 70%;
+    left: 15%;
+    font-size: 2.5em;
+    opacity: 1;
+    transition: 1s;
+}
+.firstpageText>span:last-child{
+    animation: textopacity 5s;
+
+}
+@keyframes textopacity{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.firstpageText>span:nth-child(1){
+    position: relative;
+    animation: textmove 2s;
+
+}
+@keyframes textmove{
+    from{  
+        right: 100%;
+        opacity: 0;
+    }
+    to{
+       right: 0%;
+       opacity: 1;
+    }
+}
+.firstpageText>span:nth-child(2){
+    position: relative;
+    animation: textmove2 3s alternate-reverse both;
+
+}
+@keyframes textmove2{
+    0%{
+        color: whitesmoke;
+    }
+    100%{
+        color: darkolivegreen;
+    }
+}
+input[value=start] {
+    display: none;
+}
+
+label[for=start] {
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-40%,-90%);
+    background-color: darkolivegreen;
+    border-radius: 10px;
+    /* padding: 10px 40px; */
+    transition: 0.5s;
+    color: black;
+    border: none;
+    font-size: 1.3rem;
+    z-index: 3;
+    overflow: hidden;
+}
+label[for=start]::before{
+    content: "";
+    position: absolute;
+    right: 120%;
+    /* left:0%; */
+    top: 90%;
+    width: 5px;
+    height: 50px;
+    transform: translate(0%,-90%);
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px gray;
+    transition: 1s;
+    z-index: 3;
+}
+label[for=start]::after{
+    content: "CloseMenu";
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-120%,-90%);
+    background-color: darkolivegreen;
+    border-radius: 10px;
+    /* padding: 10px 40px; */
+    transition: 0.5s;
+    color: black;
+    border: none;
+    font-size: 1.3rem;
+    /* z-index: -1; */
+    overflow: hidden;
+}
+label[for=start]:hover{
+    border: 1px solid #fff;
+}
+label[for=start]:hover::before{
+    right: -10%;
+}
+
+input[value=start]:checked~.firstpageText{
+opacity: 0;
+transition: 1s;
+}
+input[value=start]:checked~label[for=start]::after{
+    transform: translate(-20%,-90%);
+}
+
+input[value=start]:checked~.Section>.food,
+input[value=start]:checked~.Section>.drink,
+input[value=start]:checked~.Section>.lifestyle{
+    transform: translateX(0%);
+}
+
+.Section{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: 2;
+    overflow: hidden;
+}
+.cal-1-3{
+    position: relative;
+    width: 27.33%;
+    margin-left: 5%;
+    height: 50%;
+    background-color: aqua;
+    float: left;
+    top: 25%;
+    border-radius: 10px;
+}
+.food{
+    transition: 1s;
+    transform: translateX(-150%);
+    background: url(photo/food/wallpaperflare.com_wallpaper.jpg)center center/cover no-repeat;
+}
+.drink{
+    transition: 1s;
+    transform: translateY(-170%);
+    background: url(photo/drink/Asbach.jpg)center center/cover no-repeat;
+}
+.lifestyle{
+    transition: 1s;
+    transform: translateX(150%);
+    background: url(photo/lifestyle/rick-gebhardt-3faX71BaNe0-unsplash.jpg)center center/cover no-repeat;
+}
+
+.Section>div a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+    opacity: 0;
+}
+.cal-1-3>a>span{
+    position: absolute;
+    top: -7%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cal-1-3:hover a{
+    opacity: 1;
+}
