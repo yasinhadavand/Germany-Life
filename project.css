@@ -14,8 +14,8 @@ html {
     font-family: 'fonts/optimusprincepsregular';
 }
 .startpage{
-    width: calc(100vw);
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: url(photo/germany.jpg) center center/cover no-repeat;
     position: absolute;
 }
@@ -169,12 +169,12 @@ input[value=start]:checked~.Section>.lifestyle{
 }
 .drink{
     transition: 1s;
-    transform: translateY(-170%);
+    transform: translateY(-350%);
     background: url(photo/drink/Asbach.jpg)center center/cover no-repeat;
 }
 .lifestyle{
     transition: 1s;
-    transform: translateX(150%);
+    transform: translateX(220%);
     background: url(photo/lifestyle/rick-gebhardt-3faX71BaNe0-unsplash.jpg)center center/cover no-repeat;
 }
 .Section>div a{
@@ -407,4 +407,32 @@ input[value=start]:checked~.Section>.lifestyle{
 }
 .left0{
     left: -10%;
+}
+@media screen and (max-width:400px){
+    .startpage{
+        overflow: hidden;
+    }
+    .firstpageText{
+        font-size: 30px;
+        top: 70%;
+    }
+    label[for=start] {
+        position: absolute;
+        top: 98%;
+        left: 50%;
+        transform: translate(-50%,-100%);
+    }
+    .cal-1-3{
+        margin-top: 50px;
+        width: 50%;
+        height: 100px;
+        top: 8%;
+    }
+    .Section>div a{
+        transition: 3s;
+        font-size: 30px;
+    }
+    input[value=start]:checked~.Section>div a{
+        opacity: 1;
+    }
 }
