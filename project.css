@@ -74,6 +74,228 @@ html {
         color: darkolivegreen;
     }
 }
+
+/* -----------------input-------------- */
+input[value=detail] {
+    display: none;
+}
+label[for=detail] {
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-40%,-90%);
+    background-color: darkslategray;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: black;
+    border: none;
+    font-size: 1.3rem;
+    z-index: 3;
+    overflow: hidden;
+}
+label[for=detail]::before{
+    content: "";
+    position: absolute;
+    right: 120%;
+    top: 90%;
+    width: 5px;
+    height: 50px;
+    transform: translate(0%,-90%);
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px gray;
+    transition: 1s;
+    z-index: 3;
+}
+label[for=detail]::after{
+    content: "Close";
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-120%,-90%);
+    background-color: darkslategray;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: black;
+    border: none;
+    font-size: 1.3rem;
+    overflow: hidden;
+}
+label[for=detail]:hover{
+    border: 1px solid #fff;
+}
+label[for=detail]:hover::before{
+    right: -10%;
+}
+input[value=detail]:checked{
+    opacity: 0;
+    transition: 1s;
+    }
+input[value=detail]:checked~label[for=detail]::after{
+        transform: translate(-20%,-90%);
+    }
+input[value=detail]:checked~.descriptionImgBc{ 
+    transition: 2s;
+    opacity: 0; 
+     }
+
+/* -------------input2------------------------- */
+
+input[value=detail2] {
+    display: none;
+}
+label[for=detail2] {
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-40%,-90%);
+    background-color: darkslategray;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: black;
+    border: none;
+    font-size: 1.3rem;
+    z-index: 3;
+    overflow: hidden;
+}
+label[for=detail2]::before{
+    content: "";
+    position: absolute;
+    right: 120%;
+    top: 90%;
+    width: 5px;
+    height: 50px;
+    transform: translate(0%,-90%);
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px gray;
+    transition: 1s;
+    z-index: 3;
+}
+label[for=detail2]::after{
+    content: "Close";
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-120%,-90%);
+    background-color: darkslategray;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: black;
+    border: none;
+    font-size: 1.3rem;
+    overflow: hidden;
+}
+label[for=detail2]:hover{
+    border: 1px solid #fff;
+}
+label[for=detail2]:hover::before{
+    right: -10%;
+}
+input[value=detail2]:checked{
+    opacity: 0;
+    transition: 1s;
+    }
+input[value=detail2]:checked~label[for=detail]::after{
+        transform: translate(-20%,-90%);
+    }
+input[value=detail2]:checked~.descriptionImgBc{ 
+    transition: 2s;
+    opacity: 0; 
+     }
+
+/* ---------------input3------------- */
+
+input[value=detail3] {
+    display: none;
+}
+label[for=detail3] {
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-40%,-90%);
+    background-color: darkslategray;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: black;
+    border: none;
+    font-size: 1.3rem;
+    z-index: 3;
+    overflow: hidden;
+}
+label[for=detail3]::before{
+    content: "";
+    position: absolute;
+    right: 120%;
+    top: 90%;
+    width: 5px;
+    height: 50px;
+    transform: translate(0%,-90%);
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px gray;
+    transition: 1s;
+    z-index: 3;
+}
+label[for=detail3]::after{
+    content: "Close";
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-120%,-90%);
+    background-color: darkslategray;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: black;
+    border: none;
+    font-size: 1.3rem;
+    overflow: hidden;
+}
+label[for=detail3]:hover{
+    border: 1px solid #fff;
+}
+label[for=detail3]:hover::before{
+    right: -10%;
+}
+input[value=detail3]:checked{
+    opacity: 0;
+    transition: 1s;
+    }
+input[value=detail3]:checked~label[for=detail]::after{
+        transform: translate(-20%,-90%);
+    }
+input[value=detail3]:checked~.descriptionImgBc{ 
+        transition: 2s;
+        opacity: 0; 
+         }
+
+/* ---------------inpute back strat--------- */
+
+
 input[value=start] {
     display: none;
 }
@@ -211,7 +433,7 @@ input[value=start]:checked~.Section>.lifestyle{
     border: 2px solid black;
     border-radius: 10px;
     transition: 1s;
-    z-index: 2;
+    /* z-index: 2; */
     
 }
 .backstart>a{
@@ -224,8 +446,8 @@ input[value=start]:checked~.Section>.lifestyle{
     background-color: white;
 }
 .part1{
-    width: calc(100vw -10px);
-    height: 90vh;
+    width: 100%;
+    height: 90%;
 }
 .wallpaper{
     width:100%;
@@ -308,7 +530,7 @@ input[value=start]:checked~.Section>.lifestyle{
     position: absolute;
     width: 40%;
     height: 100%;
-    background-color: black;
+    /* background-color: black; */
 }
 .descriptionImgChild{
     width: 50%;
@@ -338,8 +560,6 @@ input[value=start]:checked~.Section>.lifestyle{
 /* ----- photo food ------ */
 #Sauerbraten{
     background: url(photo/food/Sauerbraten2.jpg) center center/cover no-repeat;
-    background-color: white;
-    opacity: 0.8;
 }
 #Sauerbraten2{
     background: url(photo/food/Sauerbraten.jpeg) center center/cover no-repeat;
@@ -408,6 +628,47 @@ input[value=start]:checked~.Section>.lifestyle{
 .left0{
     left: -10%;
 }
+@media screen and (min-width:900px){
+    label[for=detail] {
+        display: none;
+    }
+    label[for=detail2] {
+        display: none;
+    }
+    label[for=detail3] {
+        display: none;
+    }
+}
+@media screen and (max-width:900px){
+    .backstart{
+        width: 100px;
+    }
+    .descriptionImgBc{
+        width: 100%;
+    }
+    .descriptionImgChild{
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .descriptionText{
+        width: 100%;
+        float: left;
+        /* opacity: 1; */
+        top: -30px;
+    }
+    label[for=detail] {
+        left: 50%;
+        transform: translate(-50%);
+    }
+    label[for=detail2] {
+        left: 50%;
+        transform: translate(-50%);
+    }
+    label[for=detail3] {
+        left: 50%;
+        transform: translate(-50%);
+    } 
+}
 @media screen and (max-width:400px){
     .startpage{
         overflow: hidden;
@@ -434,5 +695,29 @@ input[value=start]:checked~.Section>.lifestyle{
     }
     input[value=start]:checked~.Section>div a{
         opacity: 1;
+    }
+    /* -------end index------- */
+    .backstart{
+        width: 100px;
+    }
+    .textwallpaper>span:nth-child(1){
+        left: 0%;
+    }
+    .textwallpaper>span:nth-child(2){
+        font-size: 30px;
+    }
+    .descriptionImgBc{
+        width: 100%;
+        z-index: 1;
+        opacity: 1;
+    }
+    .descriptionImgChild{
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .descriptionText{
+        width: 100%;
+        float: left;
+        z-index: 0;
     }
 }
