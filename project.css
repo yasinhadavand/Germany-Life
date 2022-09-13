@@ -307,12 +307,12 @@ input[value=start]:checked~.Section>.lifestyle{
     background-color:red;
     top: 25%;
     left: 60%;
+    
 }
 .descriptionText{
     position: relative;
-    width: 40%;
+    width: 50%;
     height: 100%;
-    background-color: aqua;
     float: right;
 }
 .descriptionText>span:nth-child(1){
@@ -322,7 +322,8 @@ input[value=start]:checked~.Section>.lifestyle{
 }
 .descriptionText>span:nth-child(2){
     position: absolute;
-    font-size: 30px;
+    font-size: 20px;
+    top: 40%;
 }
 #Sauerbraten{
     background: url(photo/food/Sauerbraten2.jpg) center center/cover no-repeat;
@@ -332,4 +333,25 @@ input[value=start]:checked~.Section>.lifestyle{
 #Sauerbraten2{
     background: url(photo/food/Sauerbraten.jpeg) center center/cover no-repeat;
 }
-
+#Rouladen{
+    background: url(photo/food/Rouladen.jpeg) center center/cover no-repeat;
+}
+#Rouladen2{
+    background: url(photo/food/Rouladen2.jpeg) center center/cover no-repeat;
+}
+#Goulash2{
+    background: url(photo/food/goulash.jpeg) center center/cover no-repeat;
+}
+#Goulash{
+    background: url(photo/food/goulash2.jpg) center center/cover no-repeat;
+}
+.rtl{
+    right: 0;
+}
+.ltr{
+    float: left;
+    margin-left: 10px;
+}
+.left0{
+    left: -10%;
+}
