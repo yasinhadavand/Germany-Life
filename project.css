@@ -196,7 +196,10 @@ input[value=start]:checked~.Section>.lifestyle{
 .cal-1-3:hover a{
     opacity: 1;
 }
-/* cascading style sheets food  */
+
+
+
+/* cascading style sheets food --------------- */
 .backstart{
     width: 13%;
     height: 7%;
@@ -233,13 +236,16 @@ input[value=start]:checked~.Section>.lifestyle{
 #wallpaper{
     background: url(photo/food/wallpaper.jpg)center center/cover no-repeat;
 }
+#wallpaper2{
+    background: url(photo/drink/wallpaper.jpg)center center/cover no-repeat;
+}
 .wallpaper::before{
     content: "";
     width:100%;
     height: 100%;
     background-color: white;
     position: absolute;
-    opacity: 0.5;
+    opacity: 0.4;
     z-index: 0;
 }
 .textwallpaper{
@@ -326,6 +332,7 @@ input[value=start]:checked~.Section>.lifestyle{
     font-size: 20px;
     top: 40%;
 }
+/* ----- photo food ------ */
 #Sauerbraten{
     background: url(photo/food/Sauerbraten2.jpg) center center/cover no-repeat;
     background-color: white;
@@ -345,6 +352,26 @@ input[value=start]:checked~.Section>.lifestyle{
 }
 #Goulash{
     background: url(photo/food/goulash2.jpg) center center/cover no-repeat;
+}
+/* ---------end photo food------ */
+
+#Schnapps2{
+    background: url(photo/drink/schnapps.jpg) center center/cover no-repeat;
+}
+#Schnapps{
+    background: url(photo/drink/schnapps2.jpg) center center/cover no-repeat;
+}
+#ASBACHURALT{
+    background: url(photo/drink/ASBACHURALT.jpg) center center/cover no-repeat;
+}
+#ASBACHURALT2{
+    background: url(photo/drink/ASBACHURALT2.jpeg) center center/cover no-repeat;
+}
+#KINDERPUNSCH{
+    background: url(photo/drink/KINDERPUNSCH.jpg) center center/cover no-repeat;
+}
+#KINDERPUNSCH2{
+    background: url(photo/drink/KINDERPUNSCH2.jpeg) center center/cover no-repeat;
 }
 .rtl{
     right: 0;
