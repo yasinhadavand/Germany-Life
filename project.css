@@ -239,6 +239,9 @@ input[value=start]:checked~.Section>.lifestyle{
 #wallpaper2{
     background: url(photo/drink/wallpaper.jpg)center center/cover no-repeat;
 }
+#wallpaper3{
+    background: url(photo/lifestyle/wallpaper3.jpg)center center/cover no-repeat;
+}
 .wallpaper::before{
     content: "";
     width:100%;
@@ -354,7 +357,7 @@ input[value=start]:checked~.Section>.lifestyle{
     background: url(photo/food/goulash2.jpg) center center/cover no-repeat;
 }
 /* ---------end photo food------ */
-
+/* ------------start drink photo------- */
 #Schnapps2{
     background: url(photo/drink/schnapps.jpg) center center/cover no-repeat;
 }
@@ -373,6 +376,28 @@ input[value=start]:checked~.Section>.lifestyle{
 #KINDERPUNSCH2{
     background: url(photo/drink/KINDERPUNSCH2.jpeg) center center/cover no-repeat;
 }
+/* ---------- end drink photo-*------- */
+
+/* --------- start life style photo -------- */
+#culture{
+    background: url(photo/lifestyle/culture2.jpg) center center/cover no-repeat;
+}
+#culture2{
+    background: url(photo/lifestyle/culture.jpg) center center/cover no-repeat;
+}
+#people{
+    background: url(photo/lifestyle/people.jpg) center center/cover no-repeat;
+}
+#people2{
+    background: url(photo/lifestyle/people2.jpg) center center/cover no-repeat;
+}
+#Conclusion{
+    background: url(photo/lifestyle/flag2.jpg) center center/cover no-repeat;
+}
+#Conclusion2{
+    background: url(photo/lifestyle/flag.jpg) center center/cover no-repeat;
+}
+/* ---------- end life style photo ------- */
 .rtl{
     right: 0;
 }
