@@ -16,7 +16,7 @@ html {
 .startpage{
     width: 100%;
     height: 100%;
-    background: url(photo/germany.jpg) center center/cover no-repeat;
+    background: url(photo/Germany.jpg) center center/cover no-repeat;
     position: absolute;
 }
 .gif{
@@ -397,7 +397,7 @@ input[value=start]:checked~.Section>.lifestyle{
 .lifestyle{
     transition: 1s;
     transform: translateX(220%);
-    background: url(photo/lifestyle/rick-gebhardt-3faX71BaNe0-unsplash.jpg)center center/cover no-repeat;
+    background: url(photo/lifestyle/rick-gebhard.jpg)center center/cover no-repeat;
 }
 .Section>div a{
     width: 100%;
@@ -423,7 +423,7 @@ input[value=start]:checked~.Section>.lifestyle{
 
 /* cascading style sheets food --------------- */
 .backstart{
-    width: 13%;
+    width: 12%;
     height: 7%;
     position: absolute;
     text-align: center;
@@ -437,10 +437,15 @@ input[value=start]:checked~.Section>.lifestyle{
     
 }
 .backstart>a{
+
     text-decoration: none;
     color: black;
-    line-height: 30px;
-    font-size: 20px;  
+    left: 0;
+    /* line-height: 30px; */
+    font-size: 23px;  
+    width: 100%;
+    /* height: 50%; */
+    position: absolute;
 }
 .backstart:hover{
     background-color: white;
@@ -456,7 +461,7 @@ input[value=start]:checked~.Section>.lifestyle{
     background-attachment: fixed;
 }
 #wallpaper{
-    background: url(photo/food/wallpaper.jpg)center center/cover no-repeat;
+    background: url(photo/food/food.jpg)center center/cover no-repeat;
 }
 #wallpaper2{
     background: url(photo/drink/wallpaper.jpg)center center/cover no-repeat;
