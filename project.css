@@ -650,6 +650,7 @@ input[value=start]:checked~.Section>.lifestyle{
     }
     .descriptionImgBc{
         width: 100%;
+        z-index: 1;
     }
     .descriptionImgChild{
         left: 50%;
@@ -658,7 +659,8 @@ input[value=start]:checked~.Section>.lifestyle{
     .descriptionText{
         width: 100%;
         float: left;
-        /* opacity: 1; */
+        /* opacity: 0; */
+        z-index: 0;
         top: -30px;
     }
     label[for=detail] {
@@ -684,7 +686,7 @@ input[value=start]:checked~.Section>.lifestyle{
     }
     label[for=start] {
         position: absolute;
-        top: 98%;
+        top: 95%;
         left: 50%;
         transform: translate(-50%,-100%);
     }
@@ -724,5 +726,6 @@ input[value=start]:checked~.Section>.lifestyle{
         width: 100%;
         float: left;
         z-index: 0;
+        opacity: 1;
     }
 }
