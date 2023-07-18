@@ -528,9 +528,10 @@ input[value=start]:checked~.Section>.lifestyle{
     position: relative;
     width: 100%;
     height: 70%;
-    /* background-color: aqua; */
+    background-color: rgb(171, 200, 225);
     display: inline-block;
 }
+/* # */
 .descriptionImgBc{
     position: absolute;
     width: 40%;
